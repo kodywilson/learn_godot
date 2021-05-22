@@ -1,11 +1,17 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://tileset.tres" type="TileSet" id=2]
 [ext_resource path="res://CameraFollow.gd" type="Script" id=3]
 [ext_resource path="res://Enemy.tscn" type="PackedScene" id=4]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Chest.tscn" type="PackedScene" id=6]
 
 [node name="MainScene" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource( 5 )]
 
 [node name="TileMapGround" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
@@ -26,3 +32,24 @@ script = ExtResource( 3 )
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1098.65, 357.818 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1868.39, 1298.61 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1904.02, 1555.19 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 136.479, 1241.59 )
+
+[node name="Enemy5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2595.36, 136.875 )
+
+[node name="Enemy6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1376.61, 129.748 )
+
+[node name="Chest" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1400, 300 )
+
+[node name="Chest2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 2135.83, 1230.77 )
