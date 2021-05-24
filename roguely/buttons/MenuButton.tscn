@@ -1,12 +1,14 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://classic_rpg_48.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/fonts/classic_rpg_48.tres" type="DynamicFont" id=1]
+[ext_resource path="res://buttons/MenuButton.gd" type="Script" id=2]
 
 [node name="MenuButton" type="Button"]
 margin_right = 1040.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 360, 60 )
 flat = true
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
