@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cowled.png-ed9bc6a95e3e6f96b3289c3127accc84.stex"
+path="res://.import/icon.png-9a25435582839ca3cd8bb514b597c2d9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://cowled.png"
-dest_files=[ "res://.import/cowled.png-ed9bc6a95e3e6f96b3289c3127accc84.stex" ]
+source_file="res://assets/sprites/icon.png"
+dest_files=[ "res://.import/icon.png-9a25435582839ca3cd8bb514b597c2d9.stex" ]
 
 [params]
 
